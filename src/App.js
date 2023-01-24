@@ -5,16 +5,9 @@ import MovieCard from './MovieCard';
 
 import './App.css';
 
-const API_URL = "http://www.omdbapi.com/?i=tt3896198&apikey=c17e88b3"
-const movie1 = {
-  "Title": "Iron Man 2",
-  "Year": "2010",
-  "imdbID": "tt1228705",
-  "Type": "movie",
-  "Poster": "https://m.media-amazon.com/images/M/MV5BMTM0MDgwNjMyMl5BMl5BanBnXkFtZTcwNTg3NzAzMw@@._V1_SX300.jpg"
-}
+const API_URL = "http://www.omdbapi.com/?apikey=c17e88b3"
 
-
+//http://www.omdbapi.com/?i=tt3896198&apikey=c17e88b3
 function App() {
   const [movies , setMovies ] = useState([]);
   const [searchTerm , setSearchTerm] = useState('') 
